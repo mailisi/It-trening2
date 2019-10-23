@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!-- Oppgave 422 - Mer om HTML -->
+<!-- Navn: Kornelia, gruppe 6 -->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>422 Mer om HTML</title>
+</head>
+
+<body>
+
+    <h1>422 Mer om HTML</h1>
+    <h3>På denne nettsiden kommer det til å komme litt grunnleggende informasjon om Internett, nettverk, hvordan internett fungerer og internettstandarder. <br>
+	All skriftlig informasjon er hentet fra "Informasjonsteknologi 1" av Lars Nersveen, som ble utgitt av H. Aschehoug & Co. (W. Nygaard) i 2016. </h3>
+
+    <h2>Internett og nettverk</h2>
+	<p> Internett er i læreboken «Informasjonsteknologi 1» av Lars Nersveen definert <br>
+	som «et nettverk av nettverk som kobler datamaskiner sammen slik at de kan kommunisere med hverandre». <br> 
+	Protokoller, standarder for datakommunikasjon, fungerer som «spilleregler» slik at dette er mulig.  </p>
+
+<p>	Maskinvare (eng. hardware) kobler fysisk internett sammen via f.eks.: 
+
+ <ul>
+            <li>Kabler</li>
+            <li>Rutere</li>
+            <li>Tjenere</li>
+            <li>Mobiltårn</li>
+            <li>Satellitter</li>
+            <li>Radioer</li>
+            <li>Smarttelefoner</li>
+            <li>Eventuelt andre apparater</li>
+        </ul>
+
+
+Programvare (eng. software) har som oppgave å behandle informasjonen som blir sendt rundt. </p>
+
+<p> All informasjon som blir overført via internett, blir sendt fra én datamaskin til en annen. <br>
+ Et nettverk består av flere datamaskiner som er koblet sammen. <br>
+ En klient (eng. client) er i samme lærebok definert som <br>
+ "en datamaskin som ber om tilgang til informasjon som ligger på en tjener (eng. server)". <br>
+ Tjenere (eng. servers) er maskinene som lagrer informasjonen vi søker etter på internett. </p>
+
+<h2>Hvordan fungerer internett?</h2>
+<p> Informasjon som sendes fra en tjener til en klient, blir fordelt i pakker. <br>
+De blir igjen sendt separat. Protokoller tjeneren kan følge er essensielle for at klienten <br>
+kan sette sammen pakkene på riktig måte. <br>
+Det skjer ved at:
+ <Ol>
+            <li>Klienten sender en forespørsel til tjeneren, i form av en pakke</li>
+            <li>Pakken inneholder informasjon om klienten, tjeneren og klientens ønsker</li>
+            <li>Tjeneren mottar og behandler forespørselen</li>
+            <li>Klienten mottar informasjon</li>
+        </Ol>
+
+ Du kan se videoer om internett og hvordan det fungerer <a href="https://nb.khanacademy.org/computing/computer-science/internet-intro"
+            target="_blank" rel="nofollow">her</a>. </p>
+			
+			<!-- Lenke til khanacademy om internett og hvordan det fungerer -->
+
+
+<h2> Internettstandarder – protokoller </h2>
+<!--Underoverskrift-->
+
+<p> Internettstandarder gjør at kommunikasjon mellom maskinvare og programvare <br>
+ kan fungere uavhengig av om produktene utvikles av samme produsent. <br>
+ «Standard» og «protokoll» brukes mer eller mindre om det samme. <br>
+ TCP («Transmission Control Protocol») og IP (Internettprotokollen), også kalt TCP/IP, er de <br>
+ viktigste protokollene for Internett. </p>
+ 
+    <table>
+            <tr>
+                <td>Internettstandard </td>
+                <td>Informasjon</td>
+            </tr>
+            <tr>
+                <td>Internettprotokollen (IP)</td>
+                <td>Tar seg av kommunikasjonen som foregår mellom datamaskiner. <br>
+				I tillegg gir den alle maskiner en unik IP-adresse. <br>
+				IP-adressen har som regel et domenenavn, som sørger for at det er lettere å finne siden. <br>
+				Din lokale datamaskin har IP-adressen 127.0.0.1. Den har domenenavnet localhost.</td>
+            </tr>
+            <tr>
+                <td>Transmission Control Protocol (TCP)</td>
+                <td>Har som oppgave å passe på sendingen av informasjon (pakker) mellom maskiner. <br>
+				Dette foregår ved at tilleggsinformasjon «header» legges til i pakkene som blir sendt. <br>
+				TCP kan også sjekke om alle pakker har blitt mottatt. </td>        
+            </tr>
+			 <tr>
+                <td>Hypertext Transfer Protocol (http)</td>
+                <td>Fikser at nettlesere (hos klienter) kan kommunisere med tjenere. <br>
+				- Den sørger for at verdensveven fungerer.</td>        
+            </tr>
+    </table>
+	
+	<p> Vil du vite mer om internettprotokoll forklarer videoen <a href="https://youtu.be/zyL1Fud1Z1c">her</a>. </p>
+
+    <br>
+
+    <h3>Bilde av filstruktur</h3>
+	<p> <Img src="media/filstruktur.PNG" width="500" height="500">
+
+    <h2>Video</h2>
+    <video width="200" height="150" controls>
+        <source src="media/videofil.mp4" type="video/mp4">
+        Din nettleser støtter ikke video-elementet. 
+    </video>
+
+    <h2>Lyd</h2>
+    <audio controls>
+        <source src="media/lydfil.mp3" type="audio/mpeg">
+        Din nettleser støtter ikke audio-elementet. 
+    </audio>
+
+    <h3>Spørsmål, ris og ros?</h3>
+	<form method="GET"> 
+Ditt navn 
+<input type="text" name="dittnavn">
+Har du noen spørsmål eller tilbakemeldinger? 
+<input type="text" name="Spørsmål og tilbakemeldinger"> 
+<input type="submit" name="sendinn" value="Send inn"> 
+ </form>
+ 
+</body>
+
+</html>
